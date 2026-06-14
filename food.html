@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayokunle Foods</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+:root{
+--green:#0b7a3e;
+--gold:#d4af37;
+}
+
+/* Header */
+
+header{
+background:var(--green);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+/* Hero */
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+color:white;
+font-size:3.5rem;
+}
+
+.hero-content p{
+color:#fff;
+margin:20px 0;
+font-size:1.2rem;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:var(--gold);
+color:#000;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+}
+
+/* About */
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+.section-title{
+font-size:2.2rem;
+color:var(--green);
+margin-bottom:20px;
+}
+
+/* Menu */
+
+.menu{
+padding:80px 10%;
+background:#fff;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.price{
+color:var(--green);
+font-weight:bold;
+font-size:18px;
+}
+
+/* Gallery */
+
+.gallery{
+padding:80px 10%;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* Reviews */
+
+.reviews{
+padding:80px 10%;
+background:#fff;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.review{
+background:#f7f7f7;
+padding:25px;
+border-radius:10px;
+}
+
+.review h4{
+color:var(--green);
+margin-top:10px;
+}
+
+/* Contact */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.whatsapp{
+display:inline-block;
+margin-top:20px;
+background:#25D366;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+background:var(--green);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero-content h1{
+font-size:2.2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Ayokunle Foods</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Authentic Nigerian Cuisine</h1>
+<p>Delicious meals made fresh daily with quality ingredients.</p>
+<a href="#menu" class="btn">Order Now</a>
+</div>
+</section>
+
+<section class="about">
+<h2 class="section-title">Welcome to Ayokunle Foods</h2>
+<p>
+We serve the finest Nigerian dishes including Jollof Rice,
+Amala, Ewedu, Pounded Yam, Egusi Soup, Suya, and more.
+Experience rich Nigerian flavors delivered fresh.
+</p>
+</section>
+
+<section class="menu" id="menu">
+
+<h2 class="section-title">Popular Dishes</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+<div class="card-content">
+<h3>Jollof Rice & Chicken</h3>
+<p>Delicious smoky Nigerian jollof.</p>
+<p class="price">₦4,500</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<div class="card-content">
+<h3>Amala & Ewedu</h3>
+<p>Traditional Yoruba delicacy.</p>
+<p class="price">₦3,500</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+<div class="card-content">
+<h3>Suya Special</h3>
+<p>Spicy grilled beef suya.</p>
+<p class="price">₦2,500</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2 class="section-title">Food Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+<img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
+
+</div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Best Nigerian food I've tasted in Lagos.</p>
+<h4>— Adewale</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Fast delivery and excellent customer service.</p>
+<h4>— Chioma</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>The jollof rice is simply amazing.</p>
+<h4>— Musa</h4>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Order via WhatsApp</h2>
+
+<p>Click below to place your order instantly.</p>
+
+<a
+class="whatsapp"
+href="https://wa.me/2347068822601"
+target="_blank">
+Order on WhatsApp
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 Ayokunle Foods. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
